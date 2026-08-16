@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family: Arial;
+
+    background: #0f1115;
+
+    color: white;
+
+    overflow: hidden;
+
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+
+    height: 70px;
+
+    background: #181b21;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 25px;
+
+    border-bottom:
+        1px solid #30343b;
+
+}
+
+
+header h1 {
+
+    font-size: 21px;
+
+}
+
+
+#status {
+
+    color: #ff5555;
+
+}
+
+
+/* ==============================
+   SISTEMA
+============================== */
+
+.sistema {
+
+    height:
+        calc(100vh - 70px);
+
+    display: grid;
+
+    grid-template-columns:
+        240px
+        280px
+        1fr;
+
+}
+
+
+/* ==============================
+   SIDEBAR
+============================== */
+
+.sidebar {
+
+    background: #15181d;
+
+    border-right:
+        1px solid #30343b;
+
+    padding: 15px;
+
+}
+
+
+.sidebar h2 {
+
+    margin-bottom: 15px;
+
+    font-size: 17px;
+
+}
+
+
+.sidebar button {
+
+    width: 100%;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #16803c;
+
+    color: white;
+
+    cursor: pointer;
+
+    margin-bottom: 15px;
+
+}
+
+
+.item-apresentacao {
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    margin-bottom: 5px;
+
+}
+
+
+.item-apresentacao:hover {
+
+    background: #292e36;
+
+}
+
+
+/* ==============================
+   SLIDES
+============================== */
+
+.slides {
+
+    background: #101216;
+
+    border-right:
+        1px solid #30343b;
+
+    padding: 15px;
+
+}
+
+
+.titulo-area {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+
+}
+
+
+.titulo-area button {
+
+    background: #30343b;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px;
+
+    border-radius: 5px;
+
+}
+
+
+.item-slide {
+
+    background: #1b1f26;
+
+    border:
+        1px solid #30343b;
+
+    border-radius: 6px;
+
+    padding: 12px;
+
+    margin-bottom: 7px;
+
+    display: flex;
+
+    gap: 10px;
+
+    cursor: pointer;
+
+}
+
+
+.item-slide:hover {
+
+    background: #292e36;
+
+}
+
+
+.item-slide strong {
+
+    color: #aaa;
+
+}
+
+
+/* ==============================
+   EDITOR
+============================== */
+
+.editor {
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+}
+
+
+.editor h2 {
+
+    margin-bottom: 15px;
+
+}
+
+
+#tituloSlide {
+
+    width: 100%;
+
+    padding: 12px;
+
+    background: #181b21;
+
+    color: white;
+
+    border:
+        1px solid #30343b;
+
+    border-radius: 6px;
+
+    margin-bottom: 10px;
+
+}
+
+
+#textoSlide {
+
+    width: 100%;
+
+    height: 180px;
+
+    padding: 15px;
+
+    background: #181b21;
+
+    color: white;
+
+    border:
+        1px solid #30343b;
+
+    border-radius: 6px;
+
+    resize: vertical;
+
+    font-size: 18px;
+
+}
+
+
+.editor label {
+
+    display: block;
+
+    margin-top: 12px;
+
+    margin-bottom: 5px;
+
+    color: #aaa;
+
+}
+
+
+#tamanho {
+
+    width: 100%;
+
+}
+
+
+.acoes {
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 15px;
+
+}
+
+
+.acoes button {
+
+    padding: 10px 15px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    color: white;
+
+    background: #30343b;
+
+    cursor: pointer;
+
+}
+
+
+.btn-exibir {
+
+    background: #16803c !important;
+
+}
+
+
+.btn-limpar {
+
+    background: #a83232 !important;
+
+}
+
+
+/* ==============================
+   PREVIEW
+============================== */
+
+.preview {
+
+    margin-top: 20px;
+
+    height: 300px;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    white-space: pre-wrap;
+
+    overflow: hidden;
+
+}

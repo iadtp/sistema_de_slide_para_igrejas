@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Sistema de Apresentação
+</title>
+
+<link
+rel="stylesheet"
+href="{{ url_for(
+'static',
+filename='css/style.css'
+) }}">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>
+📺 Sistema de Apresentação
+</h1>
+
+<div id="status">
+● Desconectado
+</div>
+
+</header>
+
+
+<main class="sistema">
+
+
+<!-- =================================
+     APRESENTAÇÕES
+================================= -->
+
+<aside class="sidebar">
+
+<h2>
+📚 Apresentações
+</h2>
+
+
+<button
+onclick="novaApresentacao()">
+
+➕ Nova Apresentação
+
+</button>
+
+
+<div
+id="listaApresentacoes">
+
+</div>
+
+</aside>
+
+
+<!-- =================================
+     SLIDES
+================================= -->
+
+<section class="slides">
+
+<div class="titulo-area">
+
+<h2>
+Slides
+</h2>
+
+<button
+onclick="novoSlide()">
+
+➕ Novo Slide
+
+</button>
+
+</div>
+
+
+<div
+id="listaSlides">
+
+<p>
+Selecione uma apresentação
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =================================
+     EDITOR
+================================= -->
+
+<section class="editor">
+
+<h2>
+✏️ Editor
+</h2>
+
+
+<input
+id="tituloSlide"
+placeholder="Título do slide">
+
+
+<textarea
+id="textoSlide"
+placeholder="Digite o texto...">
+</textarea>
+
+
+<label>
+Tamanho
+</label>
+
+<input
+type="range"
+id="tamanho"
+min="20"
+max="150"
+value="60">
+
+
+<label>
+Cor do texto
+</label>
+
+<input
+type="color"
+id="corTexto"
+value="#ffffff">
+
+
+<label>
+Cor do fundo
+</label>
+
+<input
+type="color"
+id="corFundo"
+value="#000000">
+
+
+<div class="acoes">
+
+<button
+class="btn-exibir"
+onclick="exibirSlide()">
+
+▶ EXIBIR
+
+</button>
+
+
+<button
+onclick="salvarSlide()">
+
+💾 SALVAR
+
+</button>
+
+
+<button
+class="btn-limpar"
+onclick="limpar()">
+
+🗑 LIMPAR
+
+</button>
+
+</div>
+
+
+<div
+id="preview"
+class="preview">
+
+Digite seu texto...
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+<script
+src="https://cdn.socket.io/4.7.5/socket.io.min.js">
+</script>
+
+
+<script
+src="{{ url_for(
+'static',
+filename='js/controle.js'
+) }}">
+</script>
+
+
+</body>
+
+</html>
